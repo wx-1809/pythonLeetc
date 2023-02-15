@@ -11,7 +11,7 @@ class Solution:
     def countAsterisks(self, s: str) -> int:
         length = len(s)
         ans = cnt = 0
-        # 使用两个变量统计 ’|‘ 和’*‘，并输出相关内容
+        # 使用两个变量统计 ’|‘ 和’*‘，并输出相关内容/或是统计"|"的那个使用异或来实现统计，或是清零。
         for i in range(length):
 
             if s[i] == "|":
