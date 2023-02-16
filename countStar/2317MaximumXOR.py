@@ -10,13 +10,18 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 """
+from functools import reduce
 from typing import List
+
+# reduce()函数会对参数序列中元素进行累积。 https://blog.csdn.net/qq_41554005/article/details/119933746
+# 匿名函数lambda https://blog.csdn.net/sweet_tea_/article/details/126746212
 
 
 class Solution:
     def maximumXOR(self, nums: List[int]) -> int:
 
-        pass
+        return reduce(lambda x,y: x|y, nums)
+        # pass
 
 
 
